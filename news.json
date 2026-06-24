@@ -5,22 +5,48 @@
       "type": "migration_needed",
       "severity": "critical",
       "heading": "Modular Consoles – Migration Required",
-      "short_description": "The original Modular Consoles mod is broken on the current game version. Migrate to the maintained community version.",
-      "long_description": "The original author is currently unavailable and the mod no longer works correctly on recent updates (especially the beta branch).\n\nWe recommend switching to the community-maintained version provided by StationeersCommunityMods.\n\nClicking the button below will automatically add the Manifest repo and install the replacement. You will also need to add LibConstruct from the same repo for full functionality (you can do this with: slp repomods add LibConstruct).",
+      "short_description": "The original Modular Consoles mod is broken. Migrate to the maintained community version.",
+      "long_description": "The original author is unavailable and the mod is broken on current game versions (especially beta).\n\nThis will add the Manifest repo and install the replacement 'modularconsoles' version.\n\nLibConstruct is also required for full functionality.",
       "trigger": {
         "match_type": "workshop_id",
         "workshop_id": "3505169479"
       },
       "actions": {
         "primary": {
-          "label": "Migrate Automatically",
+          "label": "Migrate Modular Consoles",
           "action": "repo_mod_install",
-          "url": "https://raw.githubusercontent.com/StationeersCommunityMods/Manifest/refs/heads/modrepo/modrepo.xml"
+          "url": "https://raw.githubusercontent.com/StationeersCommunityMods/Manifest/refs/heads/modrepo/modrepo.xml",
+          "modid": "modularconsoles"
         },
         "secondary": {
-          "label": "View Repo",
+          "label": "View on GitHub",
           "action": "open_url",
           "url": "https://github.com/StationeersCommunityMods/ModularConsoles"
+        }
+      }
+    },
+    {
+      "id": "libconstruct-migration",
+      "type": "migration_needed",
+      "severity": "critical",
+      "heading": "LibConstruct – Migration Required",
+      "short_description": "LibConstruct (companion to Modular Consoles) is broken. Migrate to the maintained version.",
+      "long_description": "Companion library that is also broken on current versions.\n\nThis will install the repo version from the same Manifest repo.",
+      "trigger": {
+        "match_type": "workshop_id",
+        "workshop_id": "3505115682"
+      },
+      "actions": {
+        "primary": {
+          "label": "Migrate LibConstruct",
+          "action": "repo_mod_install",
+          "url": "https://raw.githubusercontent.com/StationeersCommunityMods/Manifest/refs/heads/modrepo/modrepo.xml",
+          "modid": "LibConstruct"
+        },
+        "secondary": {
+          "label": "View Manifest Repo",
+          "action": "open_url",
+          "url": "https://github.com/StationeersCommunityMods/Manifest"
         }
       }
     }
