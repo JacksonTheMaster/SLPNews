@@ -4,13 +4,11 @@
       "id": "showcase-info",
       "type": "info",
       "severity": "info",
-      "heading": "Info Notice – 10 Second Auto-Dismiss",
-      "short_description": "This is an informational notice that will auto-close after 10 seconds if left alone.",
-      "long_description": "This type of notice is for non-critical information.\n\nIt has a 10-second timer. You can still click buttons before it closes automatically.\n\nNo confirmation needed to dismiss.",
+      "heading": "Info Notice (Showcase)",
+      "short_description": "This is a non-critical informational notice.",
+      "long_description": "Info notices are for general information only.\n\nThey automatically dismiss after 10 seconds if you do not interact with them. You can still click buttons before the timer runs out.",
       "trigger": {
-        "match_type": "mod_name_and_version",
-        "mod_name": "SLP Showcase Dummy",
-        "version_below": "9.9.9"
+        "match_type": "always"
       },
       "actions": {
         "primary": {
@@ -24,88 +22,67 @@
       "id": "showcase-warning",
       "type": "warning",
       "severity": "warning",
-      "heading": "Warning Notice",
-      "short_description": "Something might be wrong with one of your mods.",
-      "long_description": "Warning notices use yellow styling.\n\nThey do not auto-dismiss.\n\nYou must interact with them.",
+      "heading": "Warning Notice (Showcase)",
+      "short_description": "This is a warning that requires your attention before continuing.",
+      "long_description": "Warning notices are styled in yellow.\n\nThey do not auto-dismiss. You must click a button or the Ignore option (with confirmation) to proceed with loading.",
       "trigger": {
-        "match_type": "workshop_id",
-        "workshop_id": "9999999999"
+        "match_type": "always"
       },
       "actions": {
         "primary": {
-          "label": "View Details",
-          "action": "open_url",
-          "url": "https://github.com/JacksonTheMaster/SLPNews"
-        },
-        "secondary": {
-          "label": "Ignore for now",
+          "label": "Acknowledge",
           "action": "open_url",
           "url": "https://github.com/StationeersLaunchPad/StationeersLaunchPad"
         }
       }
     },
     {
-      "id": "showcase-critical",
-      "type": "critical",
-      "severity": "critical",
-      "heading": "Critical Notice – Action Required",
-      "short_description": "This is a high severity notice that blocks progress.",
-      "long_description": "Critical notices are red and very important.\n\nThey never auto-dismiss and usually require a decision before you can continue loading mods.",
-      "trigger": {
-        "match_type": "workshop_id_and_version",
-        "workshop_id": "9999999998",
-        "version_below": "1.0.0"
-      },
-      "actions": {
-        "primary": {
-          "label": "Take Action",
-          "action": "open_url",
-          "url": "https://raw.githubusercontent.com/StationeersCommunityMods/Manifest/refs/heads/modrepo/modrepo.xml"
-        }
-      }
-    },
-    {
-      "id": "showcase-migration-modular",
+      "id": "modular-consoles-migration",
       "type": "migration_needed",
       "severity": "critical",
-      "heading": "Migration Needed – Modular Consoles",
-      "short_description": "Your installed version of Modular Consoles is broken on this game version.",
-      "long_description": "The original mod author is unavailable.\n\nThis notice demonstrates the repo_mod_install action with an explicit modid.\n\nClicking Migrate will install 'modularconsoles' using our new GitHub Hosted Mods system instead of the steam workshop..",
+      "heading": "Modular Consoles – Migration Required",
+      "short_description": "The original Modular Consoles mod is broken. Migrate to the maintained community version.",
+      "long_description": "The original author is unavailable and the mod is broken on current game versions (especially the beta branch).\n\nThis will add the Manifest repo and install the replacement 'modularconsoles' version.\n\nLibConstruct is also required for full functionality.",
       "trigger": {
         "match_type": "workshop_id",
         "workshop_id": "3505169479"
       },
       "actions": {
         "primary": {
-          "label": "Migrate Automatically",
+          "label": "Migrate Modular Consoles",
           "action": "repo_mod_install",
           "url": "https://raw.githubusercontent.com/StationeersCommunityMods/Manifest/refs/heads/modrepo/modrepo.xml",
           "modid": "modularconsoles"
         },
         "secondary": {
-          "label": "View Manifest",
+          "label": "View on GitHub",
           "action": "open_url",
-          "url": "https://github.com/StationeersCommunityMods/Manifest"
+          "url": "https://github.com/StationeersCommunityMods/ModularConsoles"
         }
       }
     },
     {
-      "id": "showcase-mod-broken",
-      "type": "mod_broken",
+      "id": "libconstruct-migration",
+      "type": "migration_needed",
       "severity": "critical",
-      "heading": "Mod Broken – Example",
-      "short_description": "A mod you are using is known to be broken.",
-      "long_description": "mod_broken type is similar to migration_needed.\n\nIt requires confirmation to ignore.\n\nThis one has no primary action, only secondary link.",
+      "heading": "LibConstruct – Migration Required",
+      "short_description": "LibConstruct (companion to Modular Consoles) is broken. Migrate to the maintained version.",
+      "long_description": "Companion library that is also broken on current game versions.\n\nThis will install the repo version from the same Manifest repo.",
       "trigger": {
-        "match_type": "mod_name_and_version",
-        "mod_name": "SLP Showcase Broken Mod",
-        "version_below": "0.0.1"
+        "match_type": "workshop_id",
+        "workshop_id": "3505115682"
       },
       "actions": {
+        "primary": {
+          "label": "Migrate LibConstruct",
+          "action": "repo_mod_install",
+          "url": "https://raw.githubusercontent.com/StationeersCommunityMods/Manifest/refs/heads/modrepo/modrepo.xml",
+          "modid": "LibConstruct"
+        },
         "secondary": {
-          "label": "Report Issue",
+          "label": "View Manifest Repo",
           "action": "open_url",
-          "url": "https://github.com/StationeersLaunchPad/StationeersLaunchPad/issues"
+          "url": "https://github.com/StationeersCommunityMods/Manifest"
         }
       }
     }
