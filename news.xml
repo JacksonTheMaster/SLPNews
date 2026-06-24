@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NewsFeed>
+  <Entry id="modular-consoles-migration" type="migration_needed" severity="critical" heading="Modular Consoles – Migration Required">
+    <short_description>The original Modular Consoles mod is broken. Migrate to the maintained community version.</short_description>
+    <long_description>The original author is unavailable and the mod is broken on current game versions (especially the beta branch).
+
+This will add the Manifest repo and install the replacement [b]modularconsoles[/b] version.
+
+[u]LibConstruct[/u] is also required for full functionality.
+
+Example [i]italic[/i] text, [strike]strikethrough[/strike], and a [url=https://github.com/StationeersCommunityMods/Manifest]link[/url].
+
+[code]Some code example here[/code]
+
+[h1]Header 1 example[/h1]
+
+More text after paragraph break.</long_description>
+    <Trigger match_type="workshop_id" workshop_id="3505169479" />
+    <Actions>
+      <Primary label="Migrate Modular Consoles" action="repo_mod_install" url="https://raw.githubusercontent.com/StationeersCommunityMods/Manifest/refs/heads/modrepo/modrepo.xml" modid="modularconsoles" />
+      <Secondary label="View on GitHub" action="open_url" url="https://github.com/StationeersCommunityMods/ModularConsoles" />
+    </Actions>
+  </Entry>
+  <Entry id="libconstruct-migration" type="migration_needed" severity="critical" heading="LibConstruct – Migration Required">
+    <short_description>LibConstruct (companion to Modular Consoles) is broken. Migrate to the maintained version.</short_description>
+    <long_description>Companion library that is also broken on current versions.
+
+This will install the repo version from the same Manifest repo.
+
+Formatting examples:
+
+[b]Bold text[/b]
+[i]Italic text[/i]
+[u]Underlined[/u]
+[strike]Strikethrough[/strike]
+
+[h2]Subheader[/h2]
+
+[url=https://example.com]Clickable link[/url]
+
+[code]
+multi
+line
+code
+[/code]
+
+Paragraphs separated by blank lines above.</long_description>
+    <Trigger match_type="workshop_id" workshop_id="3505115682" />
+    <Actions>
+      <Primary label="Migrate LibConstruct" action="repo_mod_install" url="https://raw.githubusercontent.com/StationeersCommunityMods/Manifest/refs/heads/modrepo/modrepo.xml" modid="LibConstruct" />
+      <Secondary label="View Manifest Repo" action="open_url" url="https://github.com/StationeersCommunityMods/Manifest" />
+    </Actions>
+  </Entry>
+</NewsFeed>
