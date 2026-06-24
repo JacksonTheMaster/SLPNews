@@ -1,0 +1,28 @@
+{
+  "entries": [
+    {
+      "id": "modular-consoles-migration",
+      "type": "migration_needed",
+      "severity": "critical",
+      "heading": "Modular Consoles – Migration Required",
+      "short_description": "The original Modular Consoles mod is broken on the current game version. Migrate to the maintained community version.",
+      "long_description": "The original author is currently unavailable and the mod no longer works correctly on recent updates (especially the beta branch).\n\nWe recommend switching to the community-maintained version provided by StationeersCommunityMods.\n\nClicking the button below will automatically add the Manifest repo and install the replacement. You will also need to add LibConstruct from the same repo for full functionality (you can do this with: slp repomods add LibConstruct).",
+      "trigger": {
+        "match_type": "workshop_id",
+        "workshop_id": "3505169479"
+      },
+      "actions": {
+        "primary": {
+          "label": "Migrate Automatically",
+          "action": "repo_mod_install",
+          "url": "https://raw.githubusercontent.com/StationeersCommunityMods/Manifest/refs/heads/modrepo/modrepo.xml"
+        },
+        "secondary": {
+          "label": "View Repo",
+          "action": "open_url",
+          "url": "https://github.com/StationeersCommunityMods/ModularConsoles"
+        }
+      }
+    }
+  ]
+}
