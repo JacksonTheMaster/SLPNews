@@ -1,48 +1,12 @@
 {
   "entries": [
     {
-      "id": "showcase-info",
-      "type": "info",
-      "severity": "info",
-      "heading": "Info Notice (Showcase)",
-      "short_description": "This is a non-critical informational notice.",
-      "long_description": "Info notices are for general information only.\n\nThey automatically dismiss after 10 seconds if you do not interact with them. You can still click buttons before the timer runs out.",
-      "trigger": {
-        "match_type": "always"
-      },
-      "actions": {
-        "primary": {
-          "label": "Got it",
-          "action": "open_url",
-          "url": "https://github.com/StationeersLaunchPad/StationeersLaunchPad"
-        }
-      }
-    },
-    {
-      "id": "showcase-warning",
-      "type": "warning",
-      "severity": "warning",
-      "heading": "Warning Notice (Showcase)",
-      "short_description": "This is a warning that requires your attention before continuing.",
-      "long_description": "Warning notices are styled in yellow.\n\nThey do not auto-dismiss. You must click a button or the Ignore option (with confirmation) to proceed with loading.",
-      "trigger": {
-        "match_type": "always"
-      },
-      "actions": {
-        "primary": {
-          "label": "Acknowledge",
-          "action": "open_url",
-          "url": "https://github.com/StationeersLaunchPad/StationeersLaunchPad"
-        }
-      }
-    },
-    {
       "id": "modular-consoles-migration",
       "type": "migration_needed",
       "severity": "critical",
       "heading": "Modular Consoles – Migration Required",
       "short_description": "The original Modular Consoles mod is broken. Migrate to the maintained community version.",
-      "long_description": "The original author is unavailable and the mod is broken on current game versions (especially the beta branch).\n\nThis will add the Manifest repo and install the replacement 'modularconsoles' version.\n\nLibConstruct is also required for full functionality.",
+      "long_description": "The original author is unavailable and the mod is broken on current game versions (especially the beta branch).\n\nThis will add the Manifest repo and install the replacement [b]modularconsoles[/b] version.\n\n[u]LibConstruct[/u] is also required for full functionality.\n\nExample [i]italic[/i] text, [strike]strikethrough[/strike], and a [url=https://github.com/StationeersCommunityMods/Manifest]link[/url].\n\n[code]Some code example here[/code]\n\n[h1]Header 1 example[/h1]\n\nMore text after paragraph break.",
       "trigger": {
         "match_type": "workshop_id",
         "workshop_id": "3505169479"
@@ -67,7 +31,7 @@
       "severity": "critical",
       "heading": "LibConstruct – Migration Required",
       "short_description": "LibConstruct (companion to Modular Consoles) is broken. Migrate to the maintained version.",
-      "long_description": "Companion library that is also broken on current game versions.\n\nThis will install the repo version from the same Manifest repo.",
+      "long_description": "Companion library that is also broken on current versions.\n\nThis will install the repo version from the same Manifest repo.\n\nFormatting examples:\n\n[b]Bold text[/b]\n[i]Italic text[/i]\n[u]Underlined[/u]\n[strike]Strikethrough[/strike]\n\n[h2]Subheader[/h2]\n\n[url=https://example.com]Clickable link[/url]\n\n[code]\nmulti\nline\ncode\n[/code]\n\nParagraphs separated by blank lines above.",
       "trigger": {
         "match_type": "workshop_id",
         "workshop_id": "3505115682"
