@@ -1,54 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <NewsFeed>
-  <Entry id="modular-consoles-migration" type="migration_needed" severity="critical" heading="Modular Consoles – Migration Required">
-    <short_description>The original Modular Consoles mod is broken. Migrate to the maintained community version.</short_description>
-    <long_description>The original author is unavailable and the mod is broken on current game versions (especially the beta branch).
+  <Entry id="modular-consoles-migration" type="migration_needed" severity="critical" heading="Modular Consoles – Action Required">
+    <short_description>The original Modular Consoles Mod is no longer maintained - a letter from WIKUS</short_description>
+    <long_description>[h1]What happened?[/h1]
+Tom, the original developer of [b]Modular Consoles[/b], has been unreachable for some time. I don't know the details, and I wish him well - but in his absence, the mod has broken on recent game versions and there is no way for me to push fixes to Tom's Workshop entry.
 
-This will add the Manifest repo and install the replacement [b]modularconsoles[/b] version.
+[h1]What are we doing about it?[/h1]
+      
+I have taken over maintenance of the mod under my own Workshop page. The new version is up to date, actively maintained, and a drop-in replacement for our original.
 
-[u]LibConstruct[/u] is also required for full functionality.
+Clicking [b]Migrate[/b] below will automatically unsubscribe you from the old entry and subscribe you to the maintained version on my (WIKUS's) workshop. [b]Your saves are safe.[/b]
 
-Example [i]italic[/i] text, [strike]strikethrough[/strike], and a [url=https://github.com/StationeersCommunityMods/Manifest]link[/url].
+[h1]A note from me[/h1]
+I'm sorry you're seeing this at all — this isn't how any of us wanted things to go. Tom helpted me built something great, and we're just trying to make sure it keeps working for everyone.
 
-[code]Some code example here[/code]
+— [b]Wikus with a little help from JacksonTheMaster, Aproposmath and Inaki [/b]
 
-[h1]Header 1 example[/h1]
-
-More text after paragraph break.</long_description>
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3452651592]View the maintained Workshop page[/url]</long_description>
     <Trigger match_type="workshop_id" workshop_id="3505169479" />
     <Actions>
-      <Primary label="Migrate Modular Consoles" action="repo_mod_install" url="https://raw.githubusercontent.com/StationeersCommunityMods/Manifest/refs/heads/modrepo/modrepo.xml" modid="modularconsoles" />
-      <Secondary label="View on GitHub" action="open_url" url="https://github.com/StationeersCommunityMods/ModularConsoles" />
+      <Primary label="Migrate Mod" action="workshop_mod_install" workshop_id="3452651592" />
+      <Secondary label="Open Workshop Page" action="open_url" url="https://steamcommunity.com/sharedfiles/filedetails/?id=3452651592" />
     </Actions>
   </Entry>
-  <Entry id="libconstruct-migration" type="migration_needed" severity="critical" heading="LibConstruct – Migration Required">
-    <short_description>LibConstruct (companion to Modular Consoles) is broken. Migrate to the maintained version.</short_description>
-    <long_description>Companion library that is also broken on current versions.
+  <Entry id="libconstruct-migration" type="migration_needed" severity="critical" heading="LibConstruct – Action Required">
+    <short_description>The original LibConstruct Mod is no longer maintained - migrate no  w</short_description>
+    <long_description>[h1]What is LibConstruct?[/h1]
+[b]LibConstruct[/b] is a shared library that [b]Modular Consoles[/b] and some other mods depends on. It was authored by Tom_is_unlucky, who has been unreachable for some time. We don't know the details, and we wish him well - but in his absence, the mod has broken on recent game versions and there is no way for us to push fixes to his Workshop entry.
 
-This will install the repo version from the same Manifest repo.
+[h1]What are we doing about it?[/h1]
+Just like Modular Consoles, We've published a maintained version under WIKUS's Workshop page. Clicking [b]Migrate[/b] will unsubscribe you from the old entry and subscribe you to the working one automatically.
 
-Formatting examples:
+— [b]Wikus with a little help from JacksonTheMaster, Aproposmath and Inaki [/b]
 
-[b]Bold text[/b]
-[i]Italic text[/i]
-[u]Underlined[/u]
-[strike]Strikethrough[/strike]
-
-[h2]Subheader[/h2]
-
-[url=https://example.com]Clickable link[/url]
-
-[code]
-multi
-line
-code
-[/code]
-
-Paragraphs separated by blank lines above.</long_description>
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3328065049]View the maintained Workshop page[/url]</long_description>
     <Trigger match_type="workshop_id" workshop_id="3505115682" />
     <Actions>
-      <Primary label="Migrate LibConstruct" action="repo_mod_install" url="https://raw.githubusercontent.com/StationeersCommunityMods/Manifest/refs/heads/modrepo/modrepo.xml" modid="LibConstruct" />
-      <Secondary label="View Manifest Repo" action="open_url" url="https://github.com/StationeersCommunityMods/Manifest" />
+      <Primary label="Migrate Mod" action="workshop_mod_install" workshop_id="3328065049" />
+      <Secondary label="Open Workshop Page" action="open_url" url="https://steamcommunity.com/sharedfiles/filedetails/?id=3328065049" />
     </Actions>
   </Entry>
 </NewsFeed>
