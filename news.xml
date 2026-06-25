@@ -22,7 +22,7 @@ and subscribe you to the maintained version on my (WIKUS's) workshop.
     <Trigger match_type="workshop_id" workshop_id="3505169479" />
     <Actions>
       <Primary label="Migrate Mod" action="workshop_mod_install" workshop_id="3452651592" />
-      <Secondary label="Open Workshop Page" action="open_url" url="https://steamcommunity.com/sharedfiles/filedetails/?id=3452651592" />
+      <Secondary label="Open Workshop" action="open_url" url="https://steamcommunity.com/sharedfiles/filedetails/?id=3452651592" />
     </Actions>
   </Entry>
   <Entry id="libconstruct-workshop-migration" type="migration_needed" severity="critical" heading="LibConstruct – Migration Required">
@@ -31,8 +31,6 @@ and subscribe you to the maintained version on my (WIKUS's) workshop.
 [h1]The original LibConstruct Mod is no longer maintained[/h1]
 
 But wait - what even is LibConstruct?
-
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3452651592]View the Workshop page[/url]
 
 [b]LibConstruct[/b] is a shared library that [b]Modular Consoles[/b] and some other mods depends on.
 It was authored by Tom_is_unlucky, who has been unreachable for some time.  
@@ -43,13 +41,11 @@ Clicking [b]Migrate[/b] will unsubscribe you from the old entry and subscribe yo
 to the working one automatically.
 
 - [b]Wikus with a little help from JacksonTheMaster, Aproposmath and Inaki[/b]
-
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3328065049]View the Workshop page[/url]
     </long_description>
     <Trigger match_type="workshop_id" workshop_id="3505115682" />
     <Actions>
       <Primary label="Migrate Mod" action="workshop_mod_install" workshop_id="3328065049" />
-      <Secondary label="Open Workshop Page" action="open_url" url="https://steamcommunity.com/sharedfiles/filedetails/?id=3328065049" />
+      <Secondary label="Open Workshop" action="open_url" url="https://steamcommunity.com/sharedfiles/filedetails/?id=3328065049" />
     </Actions>
   </Entry>
 </NewsFeed>
