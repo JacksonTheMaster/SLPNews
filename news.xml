@@ -19,6 +19,22 @@ and subscribe you to the maintained version on my (WIKUS's) workshop.
 [b]Your saves are safe.[/b]
 
 - [b]Wikus with a little help from JacksonTheMaster, Aproposmath and Inaki[/b]
+
+
+[b]Bold text[/b]
+[i]Italic text[/i]
+[u]Underlined[/u]
+[strike]Strikethrough[/strike]
+[h2]Subheader[/h2]
+
+[url=https://example.com]Clickable link[/url]
+
+[code]
+multi
+line
+code
+[/code]
+
     </long_description>
     <Trigger match_type="workshop_id" workshop_id="3505169479" />
     <Actions>
