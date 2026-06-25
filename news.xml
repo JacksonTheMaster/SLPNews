@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <NewsFeed>
   <Entry id="modular-consoles-migration" type="migration_needed" severity="critical" heading="Modular Consoles – Action Required">
-    <short_description>The original Modular Consoles Mod is no longer maintained - a letter from WIKUS</short_description>
-    <long_description>[h1]What happened?[/h1]
+    <short_description>- a letter from WIKUS</short_description>
+    <long_description>[h1]The original Modular Consoles Mod is no longer maintained - What happened?[/h1]
 Tom, the original developer of [b]Modular Consoles[/b], has been unreachable for some time. I don't know the details, and I wish him well - but in his absence, the mod has broken on recent game versions and there is no way for me to push fixes to Tom's Workshop entry.
 
 [h1]What are we doing about it?[/h1]
@@ -24,8 +24,9 @@ I'm sorry you're seeing this at all — this isn't how any of us wanted things t
     </Actions>
   </Entry>
   <Entry id="libconstruct-migration" type="migration_needed" severity="critical" heading="LibConstruct – Action Required">
-    <short_description>The original LibConstruct Mod is no longer maintained - migrate no  w</short_description>
-    <long_description>[h1]What is LibConstruct?[/h1]
+    <short_description> - migrate no  w</short_description>
+    <long_description>[h1]The original LibConstruct Mod is no longer maintained[/h1]
+      But wait - what even is LibConstruct?
 [b]LibConstruct[/b] is a shared library that [b]Modular Consoles[/b] and some other mods depends on. It was authored by Tom_is_unlucky, who has been unreachable for some time. We don't know the details, and we wish him well - but in his absence, the mod has broken on recent game versions and there is no way for us to push fixes to his Workshop entry.
 
 [h1]What are we doing about it?[/h1]
