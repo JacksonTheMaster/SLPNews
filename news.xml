@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <NewsFeed>
-  <Entry id="modular-consoles-workshop-migration" type="migration_needed" severity="critical" heading="Modular Consoles – migration Required">
-    <short_description>a letter from WIKUS</short_description>
+  <Entry id="modular-consoles-workshop-migration" type="migration_needed" severity="critical" heading="Modular Consoles – Migration Required">
+    <short_description>A letter from WIKUS</short_description>
     <long_description>
-      [h1]The original Modular Consoles Mod is no longer maintained - What happened?[/h1]
+[h1]The original Modular Consoles Mod is no longer maintained - What happened?[/h1]
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3452651592]View the Workshop page[/url]
-Tom, the original developer of [b]Modular Consoles[/b], has been unreachable for some time. 
-I don't know the details, and I wish him well - but in his absence, 
-the mod has broken on recent game versions and there is no way for me to 
+
+Tom, the original developer of [b]Modular Consoles[/b], has been unreachable for some time.
+I don't know the details, and I wish him well - but in his absence,
+the mod has broken on recent game versions and there is no way for me to
 push fixes to Tom's Workshop entry.
+
 [h1]What are we doing about it?[/h1]
-I have taken over maintenance of the mod under my own Workshop page. 
-The new version is up to date, actively maintained, 
+I have taken over maintenance of the mod under my own Workshop page.
+The new version is up to date, actively maintained,
 and a drop-in replacement for our original.
+
 Clicking [b]Migrate[/b] below will automatically unsubscribe you from the old entry
-and subscribe you to the maintained version on my (WIKUS's) workshop. 
+and subscribe you to the maintained version on my (WIKUS's) workshop.
 [b]Your saves are safe.[/b]
-— [b]Wikus with a little help from JacksonTheMaster, Aproposmath and Inaki [/b]
+
+— [b]Wikus with a little help from JacksonTheMaster, Aproposmath and Inaki[/b]
+    </long_description>
     <Trigger match_type="workshop_id" workshop_id="3505169479" />
     <Actions>
       <Primary label="Migrate Mod" action="workshop_mod_install" workshop_id="3452651592" />
@@ -24,19 +29,27 @@ and subscribe you to the maintained version on my (WIKUS's) workshop.
     </Actions>
   </Entry>
   <Entry id="libconstruct-workshop-migration" type="migration_needed" severity="critical" heading="LibConstruct – Action Required">
-    <short_description>migration required</short_description>
-    <long_description>[h1]The original LibConstruct Mod is no longer maintained[/h1]
-      But wait - what even is LibConstruct?
+    <short_description>Migration required for LibConstruct (companion library)</short_description>
+    <long_description>
+[h1]The original LibConstruct Mod is no longer maintained[/h1]
+
+But wait - what even is LibConstruct?
+
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3452651592]View the Workshop page[/url]
-[b]LibConstruct[/b] is a shared library that [b]Modular Consoles[/b] and some other mods depends on. 
-It was authored by Tom_is_unlucky, who has been unreachable for some time. 
-We don't know the details, and we wish him well - but in his absence, 
+
+[b]LibConstruct[/b] is a shared library that [b]Modular Consoles[/b] and some other mods depends on.
+It was authored by Tom_is_unlucky, who has been unreachable for some time.
+We don't know the details, and we wish him well - but in his absence,
 the mod has broken on recent game versions and there is no way for us to push fixes to his Workshop entry.
+
 [h1]What are we doing about it?[/h1]
-Just like Modular Consoles, We've published a maintained version under WIKUS's Workshop page. 
+Just like Modular Consoles, we've published a maintained version under WIKUS's Workshop page.
 Clicking [b]Migrate[/b] will unsubscribe you from the old entry and subscribe you to the working one automatically.
-— [b]Wikus with a little help from JacksonTheMaster, Aproposmath and Inaki [/b]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3328065049]View the Workshop page[/url]</long_description>
+
+— [b]Wikus with a little help from JacksonTheMaster, Aproposmath and Inaki[/b]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3328065049]View the Workshop page[/url]
+    </long_description>
     <Trigger match_type="workshop_id" workshop_id="3505115682" />
     <Actions>
       <Primary label="Migrate Mod" action="workshop_mod_install" workshop_id="3328065049" />
